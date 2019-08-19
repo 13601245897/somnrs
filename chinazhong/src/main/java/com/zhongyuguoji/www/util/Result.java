@@ -2,62 +2,56 @@ package com.zhongyuguoji.www.util;
 
 public class Result {
 
-    /**
-     * 返回码
-     */
-    private String code;
-    /**
-     * 返回信息
-     */
-    private String msg;
-    /**
-     * 返回数据
-     */
-    private Object data;
+	/**
+	 * 返回码
+	 */
+	private String CODE;
+	/**
+	 * 返回信息
+	 */
+	private String DESC;
+	/**
+	 * 返回数据
+	 */
+	private Object data;
 
-    public Result() {
-        super();
-    }
+	public Result() {
+		super();
+	}
 
-    public Result(String code, String msg) {
-        super();
-        this.code = code;
-        this.msg = msg;
-    }
+	public Result(String CODE, String DESC) {
+		this.CODE = CODE;
+		this.DESC = DESC;
+	}
 
-    public Result(String code, Object data) {
-        super();
-        this.code = code;
-        this.data = data;
-    }
+	public Result(String CODE, String DESC, Object data) {
+		this.CODE = CODE;
+		this.DESC = DESC;
+		this.data = data;
+	}
 
-    public Result(String code, String msg, Object data) {
-        this.code = code;
-        this.msg = msg;
-        this.data = data;
-    }
+	public String getCODE() {
+		return CODE;
+	}
 
-    public String getCode() {
-        return code;
-    }
+	public void setCODE(String cODE) {
+		CODE = cODE;
+	}
 
-    public void setCode(String code) {
-        this.code = code;
-    }
+	public String getDESC() {
+		return DESC;
+	}
 
-    public String getMsg() {
-        return msg;
-    }
+	public void setDESC(String dESC) {
+		DESC = dESC;
+	}
 
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
+	public Object getData() {
+		return data;
+	}
 
-    public Object getData() {
-        return data;
-    }
+	public void setData(Object data) {
+		this.data = data;
+	}
 
-    public void setData(Object data) {
-        this.data = data;
-    }
 }

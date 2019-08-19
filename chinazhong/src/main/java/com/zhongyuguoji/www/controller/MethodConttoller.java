@@ -101,7 +101,7 @@ public class MethodConttoller {
 					// 更新会员数据
 					mbService.saveMembers(members);
 					ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-							Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), integramlRule.getIntegraml(),
+							Constants.Success.DESC.get(Constants.Success.COMMON_CODE), integramlRule.getIntegraml(),
 							response);
 				} else if (integraml == null) {
 					// 创建首次记录
@@ -131,7 +131,7 @@ public class MethodConttoller {
 
 				} else {
 					ResponseUtils.responseAsJson(Constants.Success.ACCOMPLISH,
-							Constants.Success.SUCCESS.get(Constants.Success.ACCOMPLISH), response);
+							Constants.Success.DESC.get(Constants.Success.ACCOMPLISH), response);
 
 				}
 			} else if (circulation == 2) {
@@ -165,7 +165,7 @@ public class MethodConttoller {
 					// 更新会员数据
 					mbService.saveMembers(members);
 					ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-							Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), response);
+							Constants.Success.DESC.get(Constants.Success.COMMON_CODE), response);
 				} else if (integraml == null) {
 					// 创建首次记录
 					integraml = new Integraml();
@@ -193,7 +193,7 @@ public class MethodConttoller {
 
 				} else {
 					ResponseUtils.responseAsJson(Constants.Success.ACCOMPLISH,
-							Constants.Success.SUCCESS.get(Constants.Success.ACCOMPLISH), response);
+							Constants.Success.DESC.get(Constants.Success.ACCOMPLISH), response);
 
 				}
 			}

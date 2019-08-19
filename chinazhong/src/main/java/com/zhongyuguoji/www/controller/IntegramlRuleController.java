@@ -37,7 +37,7 @@ public class IntegramlRuleController {
 	public void getIntegramlRuleAll(HttpServletResponse response) {
 		List<IntegramlRule> integramlRules = irs.getAll();
 		ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-				Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), integramlRules, response);
+				Constants.Success.DESC.get(Constants.Success.COMMON_CODE), integramlRules, response);
 
 	}
 
@@ -52,7 +52,7 @@ public class IntegramlRuleController {
 		if (id != null) {
 			IntegramlRule integramlRuleById = irs.getIntegramlRuleById(id);
 			ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-					Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), integramlRuleById, response);
+					Constants.Success.DESC.get(Constants.Success.COMMON_CODE), integramlRuleById, response);
 		}
 
 	}
@@ -68,7 +68,7 @@ public class IntegramlRuleController {
 		if (entity != null) {
 			irs.saveEntity(entity);
 			ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-					Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), response);
+					Constants.Success.DESC.get(Constants.Success.COMMON_CODE), response);
 		}
 	}
 }

@@ -35,6 +35,6 @@ public class OperationLogController {
 	public void getAll(HttpServletResponse response) {
 		List<OperationLog> operationLogs = ols.getAll();
 		ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-				Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), operationLogs, response);
+				Constants.Success.DESC.get(Constants.Success.COMMON_CODE), operationLogs, response);
 	}
 }

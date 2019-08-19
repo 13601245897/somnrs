@@ -35,7 +35,7 @@ public class MemberSettingController {
 	public void getAll(HttpServletResponse response) {
 		List<MemberSetting> list = mss.getAll();
 		ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-				Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), list, response);
+				Constants.Success.DESC.get(Constants.Success.COMMON_CODE), list, response);
 	}
 
 	/**
@@ -50,7 +50,7 @@ public class MemberSettingController {
 			MemberSetting memberSettingById = mss.getMemberSettingById(id);
 			if (memberSettingById != null) {
 				ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-						Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), memberSettingById, response);
+						Constants.Success.DESC.get(Constants.Success.COMMON_CODE), memberSettingById, response);
 			}
 		}
 	}
@@ -60,7 +60,7 @@ public class MemberSettingController {
 		if (entity != null) {
 			mss.insert(entity);
 			ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-					Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), response);
+					Constants.Success.DESC.get(Constants.Success.COMMON_CODE), response);
 		}
 	}
 }

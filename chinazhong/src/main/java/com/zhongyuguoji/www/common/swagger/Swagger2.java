@@ -18,12 +18,12 @@ public class Swagger2 {
 	@Bean
 	public Docket createRestApi() {
 		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
-				.apis(RequestHandlerSelectors.basePackage("com.zsx.controller.api")).paths(PathSelectors.any()).build();
+				.apis(RequestHandlerSelectors.basePackage("com.zhongyuguoji.www.controller")).paths(PathSelectors.any()).build();
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder().title("Spring Boot中使用Swagger2构建RESTful APIs").description("描述")
-				.termsOfServiceUrl("http://zsx.com.cn").version("1.0").build();
+		return new ApiInfoBuilder().title("中宇国际集团接口").description("描述")
+				.termsOfServiceUrl("https://www.somnrs.com/").version("1.0").build();
 	}
 
 }

@@ -32,7 +32,7 @@ public class MembersController {
 	public void getAllMembers(HttpServletResponse response) {
 		List<Members> members = ms.getAll();
 		ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-				Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), members, response);
+				Constants.Success.DESC.get(Constants.Success.COMMON_CODE), members, response);
 	}
 	/**
 	 * getObjectById
@@ -44,7 +44,7 @@ public class MembersController {
 		if (id != null) {
 			Members membersBySid = ms.getMembersBySid(id);
 			ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-					Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), membersBySid, response);
+					Constants.Success.DESC.get(Constants.Success.COMMON_CODE), membersBySid, response);
 		}
 
 	}
@@ -58,7 +58,7 @@ public class MembersController {
 		if (entity != null) {
 			ms.saveMembers(entity);
 			ResponseUtils.responseAsJson(Constants.Success.COMMON_CODE,
-					Constants.Success.SUCCESS.get(Constants.Success.COMMON_CODE), response);
+					Constants.Success.DESC.get(Constants.Success.COMMON_CODE), response);
 		}
 
 	}
