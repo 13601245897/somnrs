@@ -22,7 +22,7 @@ import com.zhongyuguoji.www.utils.WechatGetUserInfoUtil;
 
 @RestController
 @RequestMapping("/wechat")
-public class RoadLoginController {
+public class UserLoginController {
 	@Resource
 	private WxUserService wxUserService;
 

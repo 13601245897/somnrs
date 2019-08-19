@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.zhongyuguoji.www</groupId>
-	<artifactId>chinazhong-1</artifactId>
+	<artifactId>chinazhong-somnrs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>chinazhong-1</name>
+	<name>chinazhong-somnrs</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
