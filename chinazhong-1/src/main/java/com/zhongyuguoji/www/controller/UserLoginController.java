@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -41,7 +42,7 @@ public class UserLoginController {
 				JSONObject userInfoJSON = WechatGetUserInfoUtil.getUserInfo(encryptedData,
 						jsonObject.getString("session_key"), iv);
 				if (userInfoJSON != null) {
-					wxUser.setId(userInfoJSON.getString("openid"));
+					wxUser.setId(userInfoJSON.getString("openId"));
 					wxUser.setCreateTime(new Date());
 					wxUser.setHeadImage(userInfoJSON.getString("avatarUrl"));
 					wxUser.setNickName(Base64Utils.encode((userInfoJSON.getString("nickName").getBytes())));
@@ -61,5 +62,10 @@ public class UserLoginController {
 			}
 		}
 		ResponseUtils.responseAsJson(Constants.FAILED_CODE, Constants.DESC.get(Constants.FAILED_CODE), response);
+	}
+	@GetMapping(value="/test")
+	public String test() {
+		System.out.println("===========");
+		return"ceshi";
 	}
 }
