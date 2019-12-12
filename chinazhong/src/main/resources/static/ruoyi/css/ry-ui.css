@@ -3,7 +3,7 @@
  *   Author: Ruoyi
  */
 
-/** ÓÃ»§¹ÜÀí ÑùÊ½²¼¾Ö */
+/** ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ */
 
 .box {
 	position: relative;
@@ -11,7 +11,7 @@
 	background: #ffffff;
 	border-top: 3px solid #d2d6de;
 	margin-bottom: 20px;
-	width: 100%;
+	width: 120%;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1)
 }
 
@@ -92,7 +92,7 @@
 	margin: 5px 0 5px -25px
 }
 
-/** select2 ÑùÊ½ÐÞ¸Ä */
+/** select2 ï¿½ï¿½Ê½ï¿½Þ¸ï¿½ */
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
 	background-color: #1AB394;
 	border-color: #1AB394;
@@ -113,7 +113,7 @@
 	padding-right: 10px
 }
 
-/** ±íµ¥ÑéÖ¤ ÑùÊ½²¼¾Ö */
+/** ï¿½ï¿½ï¿½ï¿½Ö¤ ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ */
 label.error {
 	position: absolute;
 	right: 18px;
@@ -136,7 +136,7 @@ label.error {
 	padding-left: 25px
 }
 
-/** ÕÚÕÖ²ã */
+/** ï¿½ï¿½ï¿½Ö²ï¿½ */
 .loaderbox {
   display: inline-block;
   min-width: 125px;
@@ -200,7 +200,7 @@ label.error {
   }
 }
 
-/** ±íµ¥²éÑ¯Ìõ¼þ */
+/** ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ */
 .container-div{
 	padding:20px 45px;
 	height:100%;
@@ -301,7 +301,7 @@ label.error {
     cursor: pointer;
 }
 
-/** ±í¸ñ²éÑ¯Êý¾Ý */
+/** ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ */
 .order-table{
 	min-height:75%;
 }
