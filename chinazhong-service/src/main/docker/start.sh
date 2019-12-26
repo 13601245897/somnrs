@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 echo ">>>>>>>>> 显示容器中的环境变量 :) "
 printenv
 echo ">>>>>>>>> 显示 JAVA_OPTS 变量值 :) "
