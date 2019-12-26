@@ -66,7 +66,7 @@
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <configuration>
-                    <imageName>tsp/${project.build.finalName}</imageName>
+                    <imageName>moses/${project.build.finalName}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
