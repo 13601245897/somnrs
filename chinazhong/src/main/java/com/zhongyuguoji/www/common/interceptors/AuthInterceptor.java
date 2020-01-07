@@ -22,7 +22,6 @@ public class AuthInterceptor implements HandlerInterceptor {
 	@Override
 	public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o)
 			throws Exception {
-		System.out.println("这只是一个测试----------");
 		return true;
 
 	}

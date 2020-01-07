@@ -32,46 +32,44 @@
 
 <body class="signin">
 	<div class="signinpanel">
-		<div class="row">
-			<div class="col-sm-5" style="left: 800px; bottom: 0px;">
-				<form id="signupForm" style="width: 461.96875px;">
-					<div>
-						<h1>
-							<img alt="[ 若依 ]" src="../static/ruoyi.png"
-								th:src="@{/ruoyi.png}" style="width: 100px;">
-						</h1>
+		<div class="col-sm-5" style="left: 800px; bottom: 0px;">
+			<form id="signupForm" style="width: 461.96875px;">
+				<div>
+					<h1>
+						<img alt="[ 若依 ]" src="../static/ruoyi.png" th:src="@{/ruoyi.png}"
+							style="width: 100px;">
+					</h1>
+				</div>
+				<p class="m-t-md">登录提示：欢迎使用 中宇国际 后台管理系统</p>
+				<input type="text" name="username" class="form-control uname"
+					placeholder="用户名" value="admin" /> <input type="password"
+					name="password" class="form-control pword m-b" placeholder="密码"
+					value="admin123" />
+				<div class="row" th:if="${captchaEbabled==true}">
+					<div class="col-xs-6">
+						<input type="text" name="validateCode" class="form-control code"
+							placeholder="验证码" maxlength="5">
 					</div>
-					<p class="m-t-md">登录提示：欢迎使用 中宇国际 后台管理系统</p>
-					<input type="text" name="username" class="form-control uname"
-						placeholder="用户名" value="admin" /> <input type="password"
-						name="password" class="form-control pword m-b" placeholder="密码"
-						value="admin123" />
-					<div class="row" th:if="${captchaEbabled==true}">
-						<div class="col-xs-6">
-							<input type="text" name="validateCode" class="form-control code"
-								placeholder="验证码" maxlength="5">
-						</div>
-						<div class="col-xs-6">
-							<a href="javascript:void(0);" title="点击更换验证码"> <img
-								th:src="@{checkImage(type=${captchaType})}" class="imgcode"
-								width="85%" />
-							</a>
-						</div>
+					<div class="col-xs-6">
+						<a href="javascript:void(0);" title="点击更换验证码"> <img
+							th:src="@{checkImage(type=${captchaType})}" class="imgcode"
+							width="85%" />
+						</a>
 					</div>
-					<input class="i-checks" type="checkbox" name="rememberme" />&nbsp;&nbsp;记住我
-					<div class="signin-info">
-						<strong>还没有账号？ <a href="#"
-							style="border-left-width: 10px; margin-left: 200px;">立即注册&raquo;</a></strong>
-					</div>
-					<button class="btn btn-success btn-block" id="btnSubmit"
-						data-loading="正在验证登录，请稍后...">登录</button>
-				</form>
-			</div>
+				</div>
+				<input class="i-checks" type="checkbox" name="rememberme" />&nbsp;&nbsp;记住我
+				<div class="signin-info">
+					<strong>还没有账号？ <a href="#"
+						style="border-left-width: 10px;">立即注册</a></strong>
+				</div>
+				<button class="btn btn-success btn-block" id="btnSubmit"
+					data-loading="正在验证登录，请稍后...">登录</button>
+			</form>
 		</div>
-		<div class="signup-footer" style="width: 500px; margin-left: 800px;">
-			<div class="pull-left">&copy; 2018 All Rights Reserved.
-				chinaRian</div>
-		</div>
+	</div>
+	<div class="signup-footer" style="width: 500px; margin-left: 800px;">
+		<div class="pull-left">&copy; 2020 All Rights Reserved.
+			chinaRian</div>
 	</div>
 	<script th:inline="javascript"> var ctx = [[@{/}]]; var captchaType = [[${captchaType}]]; </script>
 	<!-- 全局js -->
