@@ -4,6 +4,8 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +21,7 @@ import com.alibaba.druid.pool.DruidDataSource;
  */
 @Configuration
 public class DruidDBConfig {
-	// private Logger logger = LoggerFactory.getLogger(DruidDBConfig.class);
+	private Logger logger = LoggerFactory.getLogger(DruidDBConfig.class);
 
 	@Value("${spring.datasource.url}")
 	private String dbUrl;
@@ -84,7 +86,6 @@ public class DruidDBConfig {
 		datasource.setUsername(username);
 		datasource.setPassword(password);
 		datasource.setDriverClassName(driverClassName);
-
 		// configuration
 		datasource.setInitialSize(initialSize);
 		datasource.setMinIdle(minIdle);
@@ -101,7 +102,7 @@ public class DruidDBConfig {
 		try {
 			datasource.setFilters(filters);
 		} catch (SQLException e) {
-
+			logger.error("SQLException" + e);
 		}
 		datasource.setConnectionProperties(connectionProperties);
 
