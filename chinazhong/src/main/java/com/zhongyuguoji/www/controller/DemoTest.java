@@ -8,5 +8,6 @@ public class DemoTest {
 		String url = "";
 		String param = "";
 		String sendPost = SendPost.sendPost(url, param);
+		System.out.println();
 	}
 }
