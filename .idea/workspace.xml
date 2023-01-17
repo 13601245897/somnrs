@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52450f2a-3f6c-411e-ab03-32eaff26b962" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chinazhong-config/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chinazhong-config/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chinazhong-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chinazhong-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chinazhong/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chinazhong/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chinazhong/src/main/resources/static/img/login-background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/chinazhong/src/main/resources/static/img/login-background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chinazhong/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chinazhong/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +42,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.46642685" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -58,17 +52,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ChinazhongApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Chinazhong2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="chinazhong-2" />
       <extension name="coverage">
@@ -120,6 +103,9 @@
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="52450f2a-3f6c-411e-ab03-32eaff26b962" name="Default Changelist" comment="" />
@@ -136,8 +122,17 @@
       <workItem from="1667531786793" duration="282000" />
       <workItem from="1667788777227" duration="282000" />
       <workItem from="1673847441428" duration="3000" />
-      <workItem from="1673847468702" duration="1674000" />
+      <workItem from="1673847468702" duration="2801000" />
+      <workItem from="1673916847341" duration="676000" />
     </task>
+    <task id="LOCAL-00001" summary="update picture and config file">
+      <created>1673849463151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673849463151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,5 +180,13 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update picture and config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update picture and config file" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
